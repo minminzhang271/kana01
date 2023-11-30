@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+      "target": "es2015",  // 指定要使用的默认库，值为"es3","es5","es2015"...
+      "module": "esnext",  
+      "baseUrl": "./",  
+      "paths": {
+          "@/*": [
+            "src/*"
+          ],
+         // "utils": ["src/utils/*"] // 指定相对于baseUrl选项计算的路径映射，使用webpack别名，智能感知路径
+      },
+      "lib": [  
+        "ESNext",
+        "dom",
+        "DOM.Iterable",
+        "ScriptHost"
+      
+      ]
+    
+  }
+   
+}
